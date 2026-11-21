@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>العقول الأدبية الثلاثة · The Three Literary Minds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0907;--gold:#c9a24b;--gold2:#f0d58a;--ivory:#f1e8d4;box-sizing:border-box;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:inherit}
+body{margin:0;background:var(--ink);color:var(--ivory);font-family:Amiri,'Noto Naskh Arabic','Geeza Pro',serif;overflow-x:hidden}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block}
+#track{height:4900vh}
+.vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(5,4,3,.75) 100%)}
+.ch{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(env(safe-area-inset-top,0px) + 24px) 28px calc(env(safe-area-inset-bottom,0px) + 24px);pointer-events:none;opacity:0;visibility:hidden}
+.ch.low{justify-content:flex-end;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 11vh);background:linear-gradient(0deg,rgba(5,4,3,.85),transparent 60%)}
+.ar{font-weight:700;line-height:1.25;margin:0;background:linear-gradient(180deg,var(--gold2),var(--gold) 60%,#8a6a25);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(0,0,0,.85))}
+#c0 .ar{font-size:clamp(2.6rem,10vw,6.4rem)}
+.low .ar{font-size:clamp(1.9rem,6.5vw,3.4rem)}
+.en{font-family:Cinzel,Georgia,serif;letter-spacing:.3em;text-transform:uppercase;font-size:clamp(.68rem,2.5vw,1rem);margin-top:1rem;opacity:.88;text-shadow:0 2px 12px #000}
+.ch p{max-width:36ch;margin:.9rem auto 0;font-size:clamp(1.1rem,3.8vw,1.45rem);line-height:1.9;text-shadow:0 2px 12px #000}
+.ch p.sub{font-family:Georgia,serif;font-size:clamp(.8rem,2.7vw,.98rem);line-height:1.6;opacity:.7;margin-top:.4rem}
+.hint{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 26px);font-size:1.05rem;color:var(--gold2);text-shadow:0 2px 10px #000}
+.hint i{display:block;width:1px;height:38px;margin:10px auto 0;background:linear-gradient(var(--gold),transparent);transform-origin:top;animation:dr 2.2s ease-in-out infinite}
+@keyframes dr{0%{transform:scaleY(0)}60%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+.chips{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:1.2rem}
+.chip{padding:.55rem 1.1rem;border:1px solid rgba(201,162,75,.55);border-radius:999px;background:rgba(11,9,7,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;flex-direction:column;min-width:9.5rem}
+.chip b{font-size:1.25rem;color:var(--gold2)}
+.chip small{font-family:Georgia,serif;font-size:.78rem;opacity:.75}
+.foot{margin-top:1.1rem;font-size:.85rem;opacity:.65}
+#prog{position:fixed;top:0;bottom:0;left:calc(10px + env(safe-area-inset-left,0px));display:flex;align-items:center;z-index:5}
+#prog .line{position:relative;width:2px;height:44vh;background:rgba(201,162,75,.25)}
+#prog .fill{position:absolute;inset:0;background:var(--gold);transform-origin:top;transform:scaleY(0)}
+#prog button{position:absolute;left:50%;width:44px;height:44px;transform:translate(-50%,-50%);background:none;border:0;padding:0;cursor:pointer;color:var(--ivory);font:inherit}
+#prog button::before{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px;border-radius:50%;background:var(--ink);border:1.5px solid var(--gold)}
+#prog button span{position:absolute;left:34px;top:50%;transform:translateY(-50%);font-size:.85rem;white-space:nowrap;opacity:.75;display:none}
+@media(min-width:700px){#prog button span{display:block}}
+#fb{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px}
+.nogl #gl,.nogl #track,.nogl .vig,.nogl #prog,.nogl .ch{display:none}
+.nogl #fb{display:flex}
+#fb ul{list-style:none;padding:0;font-size:1.3rem;line-height:2}
+.card{max-width:34rem;padding:1rem 1.2rem;border:1px solid rgba(201,162,75,.4);border-radius:14px;background:rgba(11,9,7,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.card .ar{font-size:clamp(1.5rem,5.4vw,2.3rem)}
+.card p{max-width:none;margin:.6rem 0 0;font-size:clamp(1rem,3.5vw,1.2rem);line-height:1.8}
+.card p.sub{font-size:.8rem;line-height:1.5;opacity:.75}
+.card p:empty{display:none}
+.card p,.card .tag,.card .en,.chip small,.foot{unicode-bidi:plaintext}
+.poem{pointer-events:auto;display:block;width:100%;min-height:44px;margin-top:.7rem;padding:.7rem;border:1px solid var(--gold);border-radius:10px;background:rgba(201,162,75,.1);color:var(--gold2);font:inherit;font-size:1.1rem;line-height:1.9;cursor:pointer}
+.poem small{display:block;font-size:.75rem;color:var(--ivory);opacity:.75}
+.tag{margin-top:.6rem;padding-top:.5rem;border-top:1px solid rgba(201,162,75,.3);font-size:.85rem;color:var(--gold2)}
+@media(prefers-reduced-motion:reduce){.hint i{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div class="vig"></div>
+<div id="track"></div>
+
+<section class="ch" id="c0">
+  <h1 class="ar">العقول الأدبية الثلاثة</h1>
+  <div class="en">The Three Literary Minds</div>
+  <div class="hint">مرّر للدخول<i></i></div>
+</section>
+<section class="ch low" id="c1">
+  <h2 class="ar">المكتبة الكبرى</h2>
+  <div class="en">The Great Library</div>
+  <p>بين رفوف الكتب والمخطوطات تبدأ رحلتنا مع ثلاثة من أعلام الأدب العربي.</p>
+  <p class="sub">Between shelves of books and manuscripts, our journey begins with three figures of Arabic literature.</p>
+</section>
+<section class="ch low" id="c2">
+  <h2 class="ar">ثلاثة أعلام</h2>
+  <div class="chips">
+    <div class="chip"><b>ابن المقفع</b><small>Prose &amp; translation</small></div>
+    <div class="chip"><b>الجاحظ</b><small>Prose &amp; encyclopedic adab</small></div>
+    <div class="chip"><b>أبو نواس</b><small>Poetry</small></div>
+  </div>
+  <div class="foot">المعارض الثلاثة تُفتح تباعًا · The three exhibitions open in turn</div>
+</section>
+
+<nav id="prog" aria-label="تقدّم الرحلة">
+  <div class="line"><div class="fill"></div>
+    <button data-p="0" style="top:0%" aria-label="المدخل"><span>المدخل</span></button>
+    <button data-p=".0857" style="top:14%" aria-label="المكتبة"><span>المكتبة</span></button>
+    <button data-p=".1429" style="top:28%" aria-label="الأعلام"><span>الأعلام</span></button>
+    <button data-p=".2143" style="top:42%" aria-label="ابن المقفع"><span>ابن المقفع</span></button>
+    <button data-p=".5143" style="top:64%" aria-label="الجاحظ"><span>الجاحظ</span></button>
+    <button data-p=".8" style="top:86%" aria-label="أبو نواس"><span>أبو نواس</span></button>
+  </div>
+</nav>
+
+<main id="fb">
+  <h1 class="ar" style="font-size:2.6rem">العقول الأدبية الثلاثة</h1>
+  <div class="en">The Three Literary Minds</div>
+  <p>يتعذّر عرض التجربة ثلاثية الأبعاد على هذا الجهاز. تعرّف إلى ثلاثة من أعلام الأدب العربي:</p>
+  <ul><li>ابن المقفع — نثر وترجمة</li><li>الجاحظ — نثر وأدب موسوعي</li><li>أبو نواس — شعر</li></ul>
+  <p class="sub">3D view unavailable on this device.</p>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),mobile=matchMedia('(pointer:coarse)').matches||innerWidth<768,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let R,T=window.THREE;
+try{if(!T||!window.gsap||!window.ScrollTrigger)throw 0;R=new T.WebGLRenderer({canvas:$('#gl'),antialias:!mobile,powerPreference:'high-performance'})}
+catch(e){document.body.classList.add('nogl');return}
+
+R.setPixelRatio(Math.min(devicePixelRatio||1,mobile?1.75:2));
+R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.toneMappingExposure=1.2;
+const scene=new T.Scene();scene.background=new T.Color(0x0b0907);scene.fog=new T.FogExp2(0x120d08,.017);
+const cam=new T.PerspectiveCamera(50,1,.1,140);
+
+// ---------- helpers ----------
+const GOLD='#c9a24b';
+const cv=(w,h)=>{const c=document.createElement('canvas');c.width=w;c.height=h;return c};
+const tex=(c,rx=1,ry=1)=>{const t=new T.CanvasTexture(c);t.encoding=T.sRGBEncoding;t.wrapS=t.wrapT=T.RepeatWrapping;t.repeat.set(rx,ry);t.anisotropy=4;return t};
+const M=o=>new T.MeshStandardMaterial(o);
+const box=(w,h,d,m,x,y,z)=>{const o=new T.Mesh(new T.BoxGeometry(w,h,d),m);o.position.set(x,y,z);scene.add(o);return o};
+const star=(g,x,y,r,n=8)=>{g.beginPath();for(let i=0;i<n*2;i++){const a=i*Math.PI/n-Math.PI/2,k=i%2?r*.62:r;g[i?'lineTo':'moveTo'](x+k*Math.cos(a),y+k*Math.sin(a))}g.closePath();g.stroke()};
+const gold=M({color:0xc9a24b,metalness:.6,roughness:.4,emissive:0x2a1c05});
+const wood=M({color:0x2b1a10,roughness:.7});
+const stone=M({color:0x2a2620,roughness:.9});
+const marble=M({color:0x9a917f,roughness:.35});
+const glowT=(()=>{const c=cv(64,64),g=c.getContext('2d'),r=g.createRadialGradient(32,32,0,32,32,32);r.addColorStop(0,'rgba(255,230,170,1)');r.addColorStop(.3,'rgba(255,180,90,.45)');r.addColorStop(1,'rgba(255,150,60,0)');g.fillStyle=r;g.fillRect(0,0,64,64);return new T.CanvasTexture(c)})();
+
+// ---------- lights ----------
+scene.add(new T.HemisphereLight(0x6b5a3a,0x0a0806,.55));
+const spot=new T.SpotLight(0xffe2b0,2.2,70,.7,.6,1);spot.position.set(0,18,26);spot.target.position.set(0,5,0);scene.add(spot,spot.target);
+const endLight=new T.PointLight(0xffc27a,1.1,24,1.6);endLight.position.set(0,9,-49);scene.add(endLight);
+
+// ---------- floor & carpet ----------
+const floorM=(()=>{const c=cv(256,256),g=c.getContext('2d');g.fillStyle='#17130f';g.fillRect(0,0,256,256);g.fillStyle='#2b241b';g.fillRect(0,0,128,128);g.fillRect(128,128,128,128);g.strokeStyle='rgba(201,162,75,.35)';g.lineWidth=3;g.strokeRect(0,0,256,256);return M({map:tex(c,10,25),roughness:.28,metalness:.15})})();
+const fl=new T.Mesh(new T.PlaneGeometry(40,100),floorM);fl.rotation.x=-Math.PI/2;fl.position.set(0,0,-10);scene.add(fl);
+const carpetM=(()=>{const c=cv(256,288),g=c.getContext('2d');g.fillStyle='#4a1119';g.fillRect(0,0,256,288);g.strokeStyle=GOLD;g.lineWidth=8;g.strokeRect(14,0,228,288);g.lineWidth=2;g.strokeRect(32,-4,192,296);g.lineWidth=3;star(g,128,144,70);star(g,128,144,36);return M({map:tex(c,1,10),roughness:.9})})();
+const cp=new T.Mesh(new T.PlaneGeometry(4.6,52),carpetM);cp.rotation.x=-Math.PI/2;cp.position.set(0,.03,-27);scene.add(cp);
+
+// ---------- entrance wall, columns, doors ----------
+box(20,18,1.6,stone,-13.5,9,0);box(20,18,1.6,stone,13.5,9,0);box(7,8,1.6,stone,0,14,0);
+[-1,1].forEach(s=>{
+  const c=new T.Mesh(new T.CylinderGeometry(.75,.85,17,24),marble);c.position.set(s*5.4,8.5,1.5);scene.add(c);
+  [.6,16.4].forEach(y=>{const t=new T.Mesh(new T.TorusGeometry(.85,.12,8,24),gold);t.rotation.x=Math.PI/2;t.position.set(s*5.4,y,1.5);scene.add(t)});
+  box(.22,10.2,1.8,gold,s*3.6,5.1,.1);
+});
+box(7.5,.3,1.8,gold,0,10.2,.1);
+const doorM=(()=>{const c=cv(512,1024),g=c.getContext('2d'),gr=g.createLinearGradient(0,0,512,0);gr.addColorStop(0,'#24140c');gr.addColorStop(.5,'#3b2417');gr.addColorStop(1,'#24140c');g.fillStyle=gr;g.fillRect(0,0,512,1024);
+  g.globalAlpha=.12;for(let i=0;i<260;i++){g.fillStyle=i%2?'#000':'#6b4426';g.fillRect(Math.random()*512,0,1+Math.random()*2,1024)}g.globalAlpha=1;
+  g.strokeStyle=GOLD;g.lineWidth=7;g.strokeRect(22,22,468,980);g.lineWidth=2;g.strokeRect(40,40,432,944);
+  [[330,150],[720,110]].forEach(([y,r])=>{g.lineWidth=3;star(g,256,y,r);star(g,256,y,r*.55);g.beginPath();g.arc(256,y,r*1.15,0,6.283);g.stroke()});
+  return M({map:tex(c),roughness:.55,metalness:.2})})();
+const leaves=[-1,1].map(s=>{
+  const g=new T.Group();g.position.set(s*3.5,0,.1);
+  const m=new T.Mesh(new T.BoxGeometry(3.5,10,.35),doorM);m.position.set(-s*1.75,5,0);g.add(m);
+  const kn=new T.Mesh(new T.TorusGeometry(.38,.07,10,28),gold);kn.position.set(-s*3,5,.25);g.add(kn);
+  const pl=new T.Mesh(new T.CylinderGeometry(.2,.2,.06,16),gold);pl.rotation.x=Math.PI/2;pl.position.set(-s*3,5.55,.2);g.add(pl);
+  scene.add(g);return g;
+});
+
+// ---------- library ----------
+const LEN=52,BAY=5.2,LV=2.6,NL=5;
+[-1,1].forEach(s=>{
+  box(.5,16,LEN,wood,s*10.4,8,-27);
+  for(let i=0;i<=NL;i++)box(1.6,.2,LEN,wood,s*9.5,.1+i*LV,-27);
+  for(let b=0;b<=10;b++)box(1.6,13.2,.22,wood,s*9.5,6.7,-1-b*BAY);
+  box(.3,.12,LEN,gold,s*8.7,13.35,-27);
+});
+const pal=['#4a1c1c','#33281a','#1d2a2b','#5b3a1e','#3a1f2e','#6b5a2a','#202630','#7a2a22','#8a6a25','#2e3b2a'].map(c=>new T.Color(c));
+const N=4200,bm=new T.InstancedMesh(new T.BoxGeometry(1,1,1),M({color:0xffffff,roughness:.65}),N),d=new T.Object3D();let n=0;
+for(const s of[-1,1])for(let b=0;b<10;b++)for(let l=0;l<NL;l++){
+  let z=-1-b*BAY-.2;const end=-1-(b+1)*BAY+.2;
+  while(z>end&&n<N){
+    const w=(.12+Math.random()*.2)*(mobile?1.9:1),h=1.4+Math.random()*.95,dep=.9+Math.random()*.3;
+    if(Math.random()<.04){z-=.4;continue}
+    d.position.set(s*9.4,.2+l*LV+h/2,z-w/2);d.scale.set(dep,h,w);d.updateMatrix();
+    bm.setMatrixAt(n,d.matrix);bm.setColorAt(n,pal[(Math.random()*pal.length)|0]);n++;z-=w+.01;
+  }
+}
+bm.count=n;bm.frustumCulled=false;scene.add(bm);
+const cl=new T.Mesh(new T.PlaneGeometry(21,LEN+2),M({color:0x1c120b,roughness:.8}));cl.rotation.x=Math.PI/2;cl.position.set(0,15.6,-27);scene.add(cl);
+for(let b=0;b<=10;b++)box(21,.6,.5,wood,0,15.3,-1-b*BAY);
+
+// chandeliers
+const candle=M({color:0xf1e8d4}),flame=new T.MeshBasicMaterial({color:0xffe0a0,fog:false}),chand=[];
+[-9,-25,-41].forEach((z,i)=>{
+  const g=new T.Group();g.position.set(0,11,z);
+  const ch=new T.Mesh(new T.CylinderGeometry(.04,.04,4.6,6),gold);ch.position.y=2.3;g.add(ch);
+  [[1.7,12],[.95,8]].forEach(([r,k],j)=>{
+    const ring=new T.Mesh(new T.TorusGeometry(r,.07,8,36),gold);ring.rotation.x=Math.PI/2;ring.position.y=-j*.7;g.add(ring);
+    for(let a=0;a<k;a++){const t=a/k*6.283,x=Math.cos(t)*r,zz=Math.sin(t)*r;
+      const cd=new T.Mesh(new T.CylinderGeometry(.06,.06,.36,6),candle);cd.position.set(x,-j*.7+.2,zz);g.add(cd);
+      const f=new T.Mesh(new T.SphereGeometry(.07,6,6),flame);f.position.set(x,-j*.7+.45,zz);g.add(f)}
+  });
+  const orb=new T.Mesh(new T.SphereGeometry(.28,12,12),gold);orb.position.y=-1.2;g.add(orb);
+  const sp=new T.Sprite(new T.SpriteMaterial({map:glowT,color:0xffb060,blending:T.AdditiveBlending,depthWrite:false,transparent:true,opacity:.7,fog:false}));sp.scale.set(11,11,1);sp.position.y=-.2;g.add(sp);
+  if(!mobile||i<2){const l=new T.PointLight(0xffb15e,1.5,34,1.6);l.position.y=-.5;g.add(l);chand.push(l)}
+  scene.add(g);
+});
+
+// end wall, dais, name plaques (artistic nameplates, not portraits)
+box(2.7,18,1,stone,-9.65,9,-54);box(15.5,18,1,stone,3.25,9,-54);box(3.8,2.6,1,stone,-6.4,1.3,-54);box(3.8,10.2,1,stone,-6.4,12.9,-54);box(20,.5,3,marble,0,.25,-52.2);box(20.2,.1,3.2,gold,0,.52,-52.2);
+function plaque(c,name,en,tag){const g=c.getContext('2d');g.fillStyle='#120d09';g.fillRect(0,0,512,680);g.strokeStyle=GOLD;g.lineWidth=6;g.strokeRect(18,18,476,644);g.lineWidth=2;g.strokeRect(34,34,444,612);
+  star(g,256,210,120);star(g,256,210,66);g.beginPath();g.arc(256,210,142,0,6.283);g.stroke();
+  g.textAlign='center';g.fillStyle='#f0d58a';g.font='700 84px Amiri,serif';g.fillText(name,256,440);
+  g.fillStyle='#f1e8d4';g.font='500 30px Cinzel,Georgia,serif';g.fillText(en.toUpperCase(),256,520);
+  g.fillStyle=GOLD;g.font='400 40px Amiri,serif';g.fillText(tag,256,590)}
+const defs=[['ابن المقفع','Ibn al-Muqaffa','نثر وترجمة'],['الجاحظ','Al-Jahiz','نثر وأدب'],['أبو نواس','Abu Nuwas','شعر']];
+const portal=[],pq=defs.map((df,i)=>{
+  const x=(i-1)*6.4,c=cv(512,680),t=tex(c);plaque(c,...df);
+  const fr=box(3.8,5.1,.2,gold,x,5.2,-53.4);
+  const p=new T.Mesh(new T.PlaneGeometry(3.4,4.5),M({map:t,emissiveMap:t,emissive:0xffffff,emissiveIntensity:.5,roughness:.8}));p.position.set(x,5.2,-53.28);scene.add(p);if(!i)portal.push(fr,p);
+  return{c,t,df};
+});
+const redraw=()=>pq.forEach(o=>{plaque(o.c,...o.df);o.t.needsUpdate=true});
+if(document.fonts)Promise.all([document.fonts.load('700 80px Amiri','ابن المقفع الجاحظ أبو نواس'),document.fonts.load('400 40px Amiri','نثر وترجمة وأدب شعر'),document.fonts.load('500 30px Cinzel','Ibn al-Muqaffa')]).then(redraw).catch(()=>{});
+
+// ===== STAGE 2: Ibn al-Muqaffa exhibition (room behind the Ibn al-Muqaffa plaque) =====
+const later=[],RX=-6.4,Z0=-54.5,RL=36,RW=7,RH=12,zc=Z0-RL/2;
+if(document.fonts)Promise.all([document.fonts.load('700 46px Amiri','كليلة ودمنة'),document.fonts.load('500 34px Cinzel','KALILA')]).then(()=>later.forEach(f=>f())).catch(()=>{});
+const tcl=(t,a,b)=>{const c=t.clone();c.needsUpdate=true;c.repeat.set(a,b);return c};
+const plane=(w,h,m,x,y,z,rx=0)=>{const o=new T.Mesh(new T.PlaneGeometry(w,h),m);o.position.set(x,y,z);o.rotation.x=rx;scene.add(o);return o};
+const gl=(s,o=.7)=>{const p=new T.Sprite(new T.SpriteMaterial({map:glowT,color:0xffb060,blending:T.AdditiveBlending,depthWrite:false,transparent:true,opacity:o,fog:false}));p.scale.set(s,s,1);return p};
+plane(RW*2,RL,M({map:tcl(floorM.map,RW/2,RL/4),roughness:.3,metalness:.15}),RX,.015,zc,-Math.PI/2);
+plane(4.6,RL,M({map:tcl(carpetM.map,1,RL/5.2),roughness:.9}),RX,.03,zc,-Math.PI/2);
+plane(RW*2+1,RL,M({color:0x1c120b,roughness:.8}),RX,RH,zc,Math.PI/2);
+box(.5,RH,RL,wood,RX-RW-.25,RH/2,zc);box(.5,RH,RL,wood,RX+RW+.25,RH/2,zc);box(.7,RH,.5,wood,-13.55,RH/2,-90.75);box(11.7,RH,.5,wood,-4.75,RH/2,-90.75);box(2.6,3.6,.5,wood,-11.9,10.2,-90.75);box(2.4,RH,.5,stone,-12.2,RH/2,-54.25);
+[-1,1].forEach(s=>box(.2,.15,RL,gold,RX+s*RW,RH-.8,zc));
+for(let i=0;i<8;i++)box(RW*2+1,.5,.45,wood,RX,RH-.3,Z0-2-i*4.6);
+[-62,-76].forEach((z,i)=>{const o=new T.Mesh(new T.SphereGeometry(.35,12,12),gold);o.position.set(RX,RH-2.4,z);scene.add(o);const g=gl(9);g.position.copy(o.position);scene.add(g);box(.05,2.4,.05,gold,RX,RH-1.2,z);
+  if(!mobile||!i){const l=new T.PointLight(0xffb15e,1.4,28,1.6);l.position.set(RX,RH-3,z);scene.add(l)}});
+
+// procedural textures (redrawn once fonts load)
+const mk=(w,h,fn)=>{const c=cv(w,h),t=tex(c),d=()=>{fn(c.getContext('2d'));t.needsUpdate=true};d();later.push(d);return t};
+const page=ti=>mk(384,512,g=>{const r=g.createLinearGradient(0,0,384,512);r.addColorStop(0,'#e9d9b0');r.addColorStop(1,'#cdb27a');g.fillStyle=r;g.fillRect(0,0,384,512);g.strokeStyle='#8a2b1d';g.lineWidth=4;g.strokeRect(22,22,340,468);g.strokeStyle=GOLD;g.lineWidth=2;g.strokeRect(32,32,320,448);g.textAlign='center';g.fillStyle='#2a1a0e';g.font='700 46px Amiri,serif';g.fillText(ti,192,100);g.strokeStyle='#2a1a0e';g.lineWidth=2.2;g.lineCap='round';
+  for(let i=0;i<12;i++){const y=150+i*27;let x=346;const e=i==11?200:60;g.beginPath();g.moveTo(x,y);while(x>e){x-=6+Math.random()*5;g.lineTo(x,y+(Math.random()-.5)*9)}g.stroke()}});
+const emb=(g,k,x,y)=>{
+  const C=(a,b,r,f=1)=>{g.beginPath();g.arc(a,b,r,0,6.283);f?g.fill():g.stroke()},Tr=(a,b,c,d,e,f)=>{g.beginPath();g.moveTo(a,b);g.lineTo(c,d);g.lineTo(e,f);g.closePath();g.fill()},ink='#10201c';
+  g.fillStyle=g.strokeStyle=GOLD;g.lineWidth=5;
+  if(k=='lion'){for(let i=0;i<16;i++){const a=i*Math.PI/8;Tr(x+Math.cos(a-.2)*70,y+Math.sin(a-.2)*70,x+Math.cos(a)*115,y+Math.sin(a)*115,x+Math.cos(a+.2)*70,y+Math.sin(a+.2)*70)}C(x,y,76);g.fillStyle=ink;C(x-26,y-12,8);C(x+26,y-12,8);Tr(x-12,y+8,x+12,y+8,x,y+28)}
+  else if(k=='jackal'){Tr(x-72,y-95,x-28,y-35,x-88,y-20);Tr(x+72,y-95,x+28,y-35,x+88,y-20);Tr(x-82,y-30,x+82,y-30,x,y+95);g.fillStyle=ink;C(x-28,y-8,7);C(x+28,y-8,7);C(x,y+88,6)}
+  else if(k=='dove'){g.beginPath();g.ellipse(x-10,y+14,72,42,-.25,0,6.283);g.fill();C(x+62,y-26,26);Tr(x+84,y-32,x+114,y-22,x+84,y-14);g.beginPath();g.arc(x+40,y-10,30,0,6.283);g.stroke();g.fillStyle=ink;C(x+68,y-32,5)}
+  else if(k=='owl'){C(x,y,80);g.fillStyle=ink;C(x-30,y-10,27);C(x+30,y-10,27);g.fillStyle=GOLD;C(x-30,y-10,11);C(x+30,y-10,11);Tr(x-12,y+12,x+12,y+12,x,y+42);Tr(x-74,y-70,x-30,y-62,x-62,y-26);Tr(x+74,y-70,x+30,y-62,x+62,y-26)}
+  else{C(x,y,70);C(x-78,y-18,26);C(x+78,y-18,26);g.fillStyle=ink;C(x,y+20,38);C(x-24,y-14,8);C(x+24,y-14,8);g.fillStyle=GOLD;C(x-14,y+22,5);C(x+14,y+22,5)}
+};
+const mini=(ti,k)=>mk(384,512,g=>{const r=g.createLinearGradient(0,0,0,512);r.addColorStop(0,'#10201c');r.addColorStop(1,'#1a1a12');g.fillStyle=r;g.fillRect(0,0,384,512);g.strokeStyle=GOLD;g.lineWidth=6;g.strokeRect(14,14,356,484);g.lineWidth=2;g.strokeRect(28,28,328,456);emb(g,k,192,215);g.textAlign='center';g.fillStyle='#f0d58a';let f=36;g.font='700 36px Amiri,serif';while(g.measureText(ti).width>300&&f>22)g.font='700 '+(--f)+'px Amiri,serif';g.fillText(ti,192,420)});
+
+// exhibits: each group rises from the floor as the camera approaches
+const ex=[];
+const grp=(x,z,ry=0)=>{const g=new T.Group();g.position.set(x,0,z);g.rotation.y=ry;g.userData.z=z;scene.add(g);ex.push(g);return g};
+const bx=(g,w,h,d,m,x,y,z)=>{const o=new T.Mesh(new T.BoxGeometry(w,h,d),m);o.position.set(x,y,z);g.add(o);return o};
+const book=(g,x,y,z,s,t1,t2)=>{const b=new T.Group();b.position.set(x,y,z);b.rotation.x=-1.1;b.scale.setScalar(s);
+  [[-.76,t1,.1],[.76,t2,-.1]].forEach(([px,t,r])=>{const m=new T.Mesh(new T.PlaneGeometry(1.5,2),M({map:t,roughness:.9,emissiveMap:t,emissive:0xffffff,emissiveIntensity:.25}));m.position.x=px;m.rotation.y=r;b.add(m)});
+  const cov=new T.Mesh(new T.BoxGeometry(3.5,2.3,.14),M({color:0x4a1119,roughness:.6}));cov.position.z=-.12;b.add(cov);g.add(b)};
+const ped=(x,z)=>{const g=grp(x,z);bx(g,2.6,3,2.2,marble,0,1.5,0);bx(g,2.9,.14,2.5,gold,0,3.05,0);return g};
+[[-1,-62,'كليلة ودمنة','jackal'],[1,-62,'باب الأسد والثور','lion'],[-1,-69,'باب الحمامة المطوقة','dove'],[1,-69,'باب البوم والغربان','owl'],[-1,-76,'باب القرد والغيلم','monkey'],[1,-76,'باب الفحص عن أمر دمنة','jackal']].forEach(([s,z,ti,k])=>{
+  const g=grp(RX+s*3.6,z,-s*.45),t=mini(ti,k);bx(g,.2,1.9,.2,wood,0,.95,0);bx(g,3.4,4.6,.14,gold,0,4.2,0);
+  const m=new T.Mesh(new T.PlaneGeometry(3,4.2),M({map:t,emissiveMap:t,emissive:0xffffff,emissiveIntensity:.35,roughness:.8}));m.position.set(0,4.2,.085);g.add(m)});
+book(ped(RX-2.2,-65.5),0,3.9,.2,1,page(''),page('كليلة ودمنة'));
+{const g=ped(RX+2.2,-72.5);bx(g,2.4,.4,1.7,M({color:0x33281a,roughness:.7}),0,3.34,0);bx(g,2.2,.35,1.5,M({color:0x4a1c1c,roughness:.7}),.1,3.72,0);bx(g,2.45,.06,1.75,gold,0,3.54,0);bx(g,2.25,.06,1.55,gold,.1,3.92,0)}
+{const g=grp(RX,-87.5);bx(g,2.2,3.2,1.8,marble,0,1.6,0);bx(g,2.5,.14,2.1,gold,0,3.27,0);book(g,0,4.3,.2,1.15,page(''),page('كليلة ودمنة'));const s=gl(8,.5);s.position.set(0,4.6,.3);g.add(s)}
+const wallT=mk(1024,512,g=>{g.fillStyle='#120d09';g.fillRect(0,0,1024,512);g.strokeStyle=GOLD;g.lineWidth=6;g.strokeRect(14,14,996,484);g.lineWidth=2;g.strokeRect(30,30,964,452);star(g,150,256,90);star(g,874,256,90);g.textAlign='center';g.fillStyle='#f0d58a';g.font='700 170px Amiri,serif';g.fillText('كليلة ودمنة',512,300);g.fillStyle=GOLD;g.font='500 34px Cinzel,Georgia,serif';g.fillText('KALILA WA DIMNA',512,410)});
+plane(8,4,M({map:wallT,emissiveMap:wallT,emissive:0xffffff,emissiveIntensity:.55}),RX,6.8,-90.2);
+
+// camera path for the exhibition: continues exactly from the end of the Stage 1 path
+const path2=new T.CatmullRomCurve3([[0,5.6,-40],[-1.8,5.5,-46],[-5,5.3,-51.5],[-6.4,5.2,-57],[-6.4,5.2,-64],[-6.4,5.3,-71],[-6.4,5.2,-77],[-6.4,5.1,-80.5]].map(a=>new T.Vector3(...a)));
+
+// text cards: [Arabic title, English title, Arabic body, English body, confirmed/disputed note, scroll window, centered?]
+const CARDS=[
+['معرض ابن المقفع','Ibn al-Muqaffa Exhibition','جسرٌ بين الثقافتين الفارسية والعربية','A bridge between Persian and Arabic culture','',[.04,.09,.2,.27],1],
+['السيرة','Biography','وُلد في إقليم فارس نحو عام 720م باسم «روزبه»، ثم أسلم وتسمّى عبد الله. عمل كاتبًا لدى ولاة وكبار رجال الدولة الأموية ثم العباسية، وقُتل في البصرة بين 756 و759م تقريبًا.','Born in Fars c. 720 as Rozbeh; became a Muslim and took the name Abdullah. A secretary to Umayyad and early Abbasid officials, he was killed in Basra c. 756–759.','تواريخ تقريبية — الروايات تختلف في الميلاد والوفاة وسبب مقتله · Dates approximate and disputed',[.31,.36,.46,.5]],
+['كليلة ودمنة','Kalila wa Dimna','حكايات على ألسنة الحيوان في الحكمة وسياسة الحكم، تعود أصولها إلى الهند (البنجاتنترا) ونُقلت إلى الفهلوية، ثم ترجمها ابن المقفع إلى العربية. محورها ابنا آوى: كليلة ودمنة.','Animal fables on wisdom and statecraft, rooted in India (the Panchatantra), carried into Middle Persian, then rendered into Arabic by Ibn al-Muqaffa.','مؤكد: نُقلت عن ترجمته العربية ترجمات لاحقة كثيرة · محل خلاف: ما أضافه هو بنفسه',[.52,.56,.66,.7]],
+['أعماله','Works','كليلة ودمنة (ترجمة وصياغة) · الأدب الكبير · رسالة الصحابة (نصائح سياسية للخليفة) · الأدب الصغير','Kalila wa Dimna; al-Adab al-Kabir; Risalat al-Sahaba (political advice to the caliph); al-Adab al-Saghir.','نسبة الأدب الصغير وبعض الأعمال الأخرى إليه محل نقاش · Some attributions are debated',[.72,.76,.84,.87]],
+['أثره','Legacy','أسهم في ترسيخ نثر عربي واضح ومحكم في كتابة الدواوين والأدب، وفتح للقارئ العربي بابًا على حكمة الفرس وقصصهم. انتهى معرض ابن المقفع.','He helped establish a clear, polished Arabic prose and opened Persian wisdom and storytelling to Arabic readers. End of the exhibition.','التالي · معرض الجاحظ — Next: al-Jahiz',[.89,.93,.97,1]]
+];
+const xs=CARDS.map(([h,e,a,en,tag,w,mid])=>{const el=document.createElement('section');el.className='ch'+(mid?'':' low');el.innerHTML='<div class="card"><h3 class="ar">'+h+'</h3><div class="en">'+e+'</div><p>'+a+'</p><p class="sub">'+en+'</p>'+(tag?'<div class="tag">'+tag+'</div>':'')+'</div>';document.body.appendChild(el);return[el,...w]});
+
+// ===== STAGES 3 + 4: Al-Jahiz hall and Abu Nuwas hall, chained after the Ibn al-Muqaffa room =====
+const W3=10,H3=15,teal=M({color:0x14302c,roughness:.8}),plum=M({color:0x2a0f1a,roughness:.8}),ceilM=M({color:0x12100d,roughness:.8});
+const room=(za,L,wm,tint)=>{const zc=za-L/2;plane(W3*2,L,M({map:tcl(floorM.map,5,L/4),color:tint,roughness:.3,metalness:.15}),RX,.015,zc,-Math.PI/2);plane(W3*2+1,L,ceilM,RX,H3,zc,Math.PI/2);[-1,1].forEach(s=>{box(.5,H3,L,wm,RX+s*(W3+.25),H3/2,zc);box(.2,.15,L,gold,RX+s*W3,H3-.8,zc)});for(let i=0;i<8;i++)box(W3*2+1,.5,.45,wood,RX,H3-.3,za-3-i*L/8)};
+room(-90.5,41,teal,0x7fb8ae);room(-131.5,40,plum,0xd9a58f);
+box(2.75,H3,.5,teal,-15.275,7.5,-90.75);box(2.75,H3,.5,teal,2.475,7.5,-90.75);box(20.5,3,.5,teal,RX,13.5,-90.75);
+box(14.45,H3,.5,teal,-9.425,7.5,-131.25);box(3.45,H3,.5,teal,2.125,7.5,-131.25);box(2.6,7.5,.5,teal,-.9,11.25,-131.25);box(W3*2+1,H3,.5,plum,RX,7.5,-171.75);
+const gate=(x,w,h,z)=>{const m=new T.Mesh(new T.BoxGeometry(w,h,.2),doorM);m.position.set(x,h/2,z);scene.add(m);return m};
+const g1=gate(-11.9,2.6,8.5,-90.4),g2=gate(-.9,2.6,7.5,-130.9);
+const rl2=(mobile?[[RX,-108]]:[[RX-2,-108],[RX+2,-150]]).map(([x,z])=>{const l=new T.PointLight(0xffb15e,1.5,40,1.5);l.position.set(x,H3-3,z);scene.add(l);return l});
+
+// Al-Jahiz hall: tall shelves, arches, armillary spheres, gold animal sculptures, giant Kitab al-Hayawan
+const shelves=(za,L)=>{const bm=new T.InstancedMesh(new T.BoxGeometry(1,1,1),M({color:0xffffff,roughness:.65}),3600),d=new T.Object3D(),pl=['#2d4a44','#6b5a2a','#5b3a1e','#8a6a25','#3a2a1a','#1d3a3a','#7a2a22'].map(c=>new T.Color(c));let n=0;
+  [-1,1].forEach(s=>{const x=RX+s*(W3-1.1);box(.4,H3,L,wood,RX+s*(W3-.3),H3/2,za-L/2);for(let i=0;i<=5;i++)box(1.6,.2,L,wood,x,.1+i*2.6,za-L/2);
+    for(let l=0;l<5;l++){let z=za-1;while(z>za-L+1&&n<3600){const w=(.12+Math.random()*.2)*(mobile?1.9:1),h=1.4+Math.random()*.95;if(Math.random()<.04){z-=.4;continue}d.position.set(x,.2+l*2.6+h/2,z-w/2);d.scale.set(1,h,w);d.updateMatrix();bm.setMatrixAt(n,d.matrix);bm.setColorAt(n,pl[(Math.random()*pl.length)|0]);n++;z-=w+.01}}});
+  bm.count=n;bm.frustumCulled=false;scene.add(bm)};
+shelves(-91,40);
+const arch=(y,z,r)=>{const a=new T.Mesh(new T.TorusGeometry(r,.28,8,40,Math.PI),gold);a.position.set(RX,y,z);scene.add(a);[-1,1].forEach(s=>{const c=new T.Mesh(new T.CylinderGeometry(.3,.3,y,8),marble);c.position.set(RX+s*r,y/2,z);scene.add(c)})};
+[-100,-112,-124].forEach(z=>arch(5.5,z,7.6));[-142,-152,-162].forEach(z=>arch(6.5,z,8.6));
+const arm=(x,y,z)=>{const g=new T.Group();g.position.set(x,y,z);[0,1,2].forEach(i=>{const t=new T.Mesh(new T.TorusGeometry(1.1,.05,8,36),gold);t.rotation.set(i*1.05,i*.7,0);g.add(t)});g.add(new T.Mesh(new T.SphereGeometry(.25,12,12),gold));scene.add(g);return g};
+const arms=[arm(RX-4,10,-98),arm(RX+3,10,-120)];
+const animal=(g,k)=>{const B=(w,h,d,x,y,z,r)=>{const o=bx(g,w,h,d,gold,x,y,z);if(r)o.rotation.z=r},S=(r,x,y,sx=1,sy=1)=>{const o=new T.Mesh(new T.SphereGeometry(r,12,10),gold);o.position.set(x,y,0);o.scale.set(sx,sy,.8);g.add(o)};
+  if(k=='camel'){B(2.2,1,.9,0,1.9,0);S(.5,.2,2.6);B(.35,1.4,.35,1.2,2.6,0,-.35);B(.8,.4,.4,1.75,3.3,0);[[-.8,-.3],[-.8,.3],[.8,-.3],[.8,.3]].forEach(([x,z])=>B(.2,1.4,.2,x,.7,z))}
+  else if(k=='bird'){S(.8,0,1.4,1.3,.9);S(.4,.9,2.1);const b=new T.Mesh(new T.ConeGeometry(.14,.5,8),gold);b.rotation.z=-Math.PI/2;b.position.set(1.4,2.1,0);g.add(b);B(1,.1,.6,-1.2,1.4,0,.3);B(.1,.8,.1,0,.4,0)}
+  else{B(2,1.2,1,0,2.1,0);S(.55,1.2,2.4);B(.25,1.2,.25,1.7,1.7,0);[[-.7,-.35],[-.7,.35],[.7,-.35],[.7,.35]].forEach(([x,z])=>B(.35,1.5,.35,x,.75,z))}};
+const sc=(x,z,k)=>{const g=grp(x,z);bx(g,2.8,1.2,1.8,marble,0,.6,0);bx(g,3,.1,2,gold,0,1.22,0);const s=new T.Group();s.position.y=1.25;g.add(s);animal(s,k)};
+sc(-13.2,-97,'camel');sc(-12.8,-109,'bird');sc(-12.8,-117,'elephant');
+const panel=(x,z,ry,ti,k)=>{const g=grp(x,z,ry),t=mini(ti,k);bx(g,.2,1.9,.2,wood,0,.95,0);bx(g,3.4,4.6,.14,gold,0,4.2,0);const m=new T.Mesh(new T.PlaneGeometry(3,4.2),M({map:t,emissiveMap:t,emissive:0xffffff,emissiveIntensity:.35,roughness:.8}));m.position.set(0,4.2,.085);g.add(m)};
+panel(-12.8,-103,.45,'الأسد','lion');panel(1,-97,-.45,'الحمامة','dove');panel(1,-121,-.45,'البومة','owl');panel(-12.8,-127,.45,'القرد','monkey');
+book(ped(-12.6,-112.5),0,3.9,.2,1,page(''),page('كتاب الحيوان'));
+const cover=(ti,c)=>mk(560,368,g=>{g.fillStyle=c;g.fillRect(0,0,560,368);g.strokeStyle=GOLD;g.lineWidth=8;g.strokeRect(12,12,536,344);g.lineWidth=2;g.strokeRect(28,28,504,312);star(g,280,125,70);star(g,280,125,38);g.textAlign='center';g.fillStyle='#f0d58a';g.font='700 62px Amiri,serif';g.fillText(ti,280,285)});
+const bks=[],gbook=(X,Z,s,cvT,t1,t2)=>{const g=grp(X,Z);bx(g,5.2,4,3.8,marble,0,2,0);bx(g,5.6,.16,4.2,gold,0,4.05,0);
+  const b=new T.Group();b.position.set(0,6.1,.2);b.rotation.x=-1.1;b.scale.setScalar(s);const pm=t=>M({map:t,roughness:.9,emissiveMap:t,emissive:0xffffff,emissiveIntensity:.3});
+  const pg=[[-.76,t1],[.76,t2]].map(([px,t])=>{const m=new T.Mesh(new T.PlaneGeometry(1.5,2),pm(t));m.userData.px=px;b.add(m);return m});
+  const cb=new T.Mesh(new T.BoxGeometry(3.5,2.3,.14),M({color:0x2a1a0e,roughness:.6}));cb.position.z=-.12;b.add(cb);
+  const cf=new T.Mesh(new T.PlaneGeometry(3.5,2.3),M({map:cvT,roughness:.6}));cf.position.z=.03;b.add(cf);g.add(b);const gg=gl(9,.45);gg.position.set(0,7,.5);g.add(gg);bks.push({pg,cf,x:X,z:Z})};
+gbook(-10.4,-124,mobile?1.6:2.1,cover('كتاب الحيوان','#1b3a33'),page(''),page('كتاب الحيوان'));
+
+// Abu Nuwas hall: poetry book, writing desks, floating pages, tappable verse display
+const pgT=page(''),fT=page('ديوان');
+const vc=cv(384,512),vt=tex(vc),vd=()=>{const g=vc.getContext('2d'),r=g.createLinearGradient(0,0,384,512);r.addColorStop(0,'#e9d9b0');r.addColorStop(1,'#cdb27a');g.fillStyle=r;g.fillRect(0,0,384,512);g.strokeStyle='#8a2b1d';g.lineWidth=4;g.strokeRect(22,22,340,468);g.strokeStyle=GOLD;g.lineWidth=2;g.strokeRect(32,32,320,448);g.textAlign='center';const ln=(s,y,w,f)=>{g.font='700 '+f+'px Amiri,serif';while(g.measureText(s).width>w&&f>14)g.font='700 '+(--f)+'px Amiri,serif';g.fillText(s,192,y)};g.fillStyle='#2a1a0e';ln('أبو نواس',90,260,44);ln(VS[pi][0],210,300,30);ln(VS[pi][1],270,300,30);g.fillStyle='#6b3a1e';ln(VS[pi][2],400,300,22);vt.needsUpdate=true};later.push(vd);
+gbook(RX,-167,mobile?1.6:2.1,cover('ديوان أبي نواس','#3a1226'),page(''),vt);
+const desk=(x,z)=>{const g=grp(x,z);bx(g,2.6,.25,1.5,wood,0,2.2,0);[-1,1].forEach(s=>bx(g,.25,2.1,1.3,wood,s*1.1,1.05,0));bx(g,2.7,.06,1.6,gold,0,2.35,0);
+  const ink=new T.Mesh(new T.CylinderGeometry(.18,.22,.35,12),M({color:0x111111,roughness:.3}));ink.position.set(.9,2.6,.3);g.add(ink);const qu=new T.Mesh(new T.CylinderGeometry(.015,.04,1.2,6),M({color:0xf1e8d4}));qu.position.set(.9,3.15,.3);qu.rotation.z=.35;g.add(qu);
+  const pg=new T.Mesh(new T.PlaneGeometry(1.3,1.7),M({map:pgT,roughness:.9}));pg.rotation.x=-1.25;pg.position.set(-.3,2.5,.1);g.add(pg)};
+[[-2.8,-148],[-10,-153],[-2.8,-158]].forEach(([x,z])=>desk(x,z));
+[-140,-150,-160].forEach(z=>{const o=new T.Mesh(new T.SphereGeometry(.3,10,10),gold);o.position.set(-3.5,11.5,z);scene.add(o);const s=gl(7);s.position.copy(o.position);scene.add(s);box(.04,3.5,.04,gold,-3.5,13.25,z)});
+const fp=[];for(let i=0;i<(mobile?6:11);i++){const m=new T.Mesh(new T.PlaneGeometry(1.5,2),new T.MeshBasicMaterial({map:i%3?pgT:fT,side:T.DoubleSide,color:0xd8c8a0,fog:false}));m.userData={x:RX-8+Math.random()*16,y:6.5+Math.random()*4.5,z:-135-Math.random()*34,ph:Math.random()*6.3};scene.add(m);fp.push(m)}
+const wT=mk(1024,448,g=>{g.fillStyle='#120d09';g.fillRect(0,0,1024,448);g.strokeStyle=GOLD;g.lineWidth=6;g.strokeRect(14,14,996,420);g.lineWidth=2;g.strokeRect(30,30,964,388);star(g,150,224,90);star(g,874,224,90);g.textAlign='center';g.fillStyle='#f0d58a';g.font='700 150px Amiri,serif';g.fillText('ديوان أبي نواس',512,270)});
+plane(9,3.9,M({map:wT,emissiveMap:wT,emissive:0xffffff,emissiveIntensity:.55}),RX,7.5,-171.2);
+const VS=[['دَعْ عَنكَ لَومي فَإِنَّ اللَومَ إِغراءُ','وَداوِني بِالَّتي كانَت هِيَ الداءُ','أبو نواس — من خمرياته (ديوانه)'],['يا ربِّ إن عظمت ذنوبي كثرةً','فلقد علمتُ بأن عفوك أعظمُ','تُنسب إلى أبي نواس — نسبة مشهورة وقد يُنازَع فيها']];
+let pi=0;const pc=cv(1024,360),pt=tex(pc),pdp=()=>{const g=pc.getContext('2d');g.clearRect(0,0,1024,360);g.fillStyle='rgba(18,13,9,.85)';g.fillRect(0,0,1024,360);g.strokeStyle=GOLD;g.lineWidth=5;g.strokeRect(10,10,1004,340);g.textAlign='center';g.fillStyle='#f0d58a';g.font='700 56px Amiri,serif';g.fillText(VS[pi][0],512,120);g.fillText(VS[pi][1],512,205);g.fillStyle=GOLD;g.font='400 32px Amiri,serif';g.fillText(VS[pi][2],512,278);g.fillStyle='#f1e8d4';g.font='400 24px Amiri,serif';g.fillText('اضغط لتبديل المقتطف',512,330);pt.needsUpdate=true};pdp();later.push(pdp);
+vd();
+
+// camera paths (each starts exactly where the previous one ends)
+const CP=a=>new T.CatmullRomCurve3(a.map(v=>new T.Vector3(...v)));
+const path3=CP([[-6.4,5.1,-80.5],[-6.6,5.1,-84],[-11.2,5.15,-88],[-11.9,5.2,-93],[-9.6,5.3,-100],[-8,5.3,-108],[-6.2,5.3,-117],[-1.6,5.2,-125],[-.9,5.2,-133]]);
+const path4=CP([[-.9,5.2,-133],[-1.6,5.2,-136.5],[-4.2,5.2,-140],[-6.4,5.2,-144.5],[-6.4,5.2,-150],[-6.4,5.2,-155],[-6.4,5.2,-159.5]]);
+const AP=[0,.0857,.1429,.2143,.5143,.8,1],AD=[0,.14,.28,.42,.64,.86,1],pf=P=>{let i=1;while(i<6&&P>AP[i])i++;return AD[i-1]+(AD[i]-AD[i-1])*(P-AP[i-1])/(AP[i]-AP[i-1])};
+const mkc=L=>L.map(([h,e,a,en,tag,w,mid])=>{const el=document.createElement('section');el.className='ch'+(mid?'':' low');el.innerHTML='<div class="card"><h3 class="ar">'+h+'</h3><div class="en">'+e+'</div><p>'+a+'</p><p class="sub">'+en+'</p>'+(tag?'<div class="tag">'+tag+'</div>':'')+'</div>';document.body.appendChild(el);return[el,...w]});
+const xs3=mkc([
+['من هو الجاحظ؟','Who was al-Jahiz?','هو أبو عثمان عمرو بن بحر الكناني الليثي، أديب ومفكر من البصرة في العصر العباسي، ويُعدّ من أعظم كتّاب النثر العربي. لُقّب بالجاحظ لجحوظ في عينيه.','','',[.04,.08,.14,.18],1],
+['حياته ونشأته','Life','وُلد في البصرة نحو سنة 776م (159هـ تقريبًا) ونشأ في أسرة متواضعة، وتلقّى العلم في حلقات اللغة والكلام واتصل بالمعتزلة. أقام في بغداد وسامراء، وتوفي في البصرة سنة 255هـ (868–869م).','','تاريخ الميلاد تقريبي · وتُروى حكاية موته تحت كتبه ولا يُجزم بها',[.19,.23,.28,.32]],
+['مكانته في الأدب العربي','His standing','يُعدّ من أبرز أعلام النثر العربي في العصر العباسي، وجمع في كتاباته بين الأدب والعلم والفكر، وأثّر فيمن جاء بعده من الكتّاب.','','',[.33,.37,.42,.46]],
+['أسلوبه الأدبي وخصائص كتابته','Style','يمتاز بالاستطراد والتنقّل بين الموضوعات، وبالسخرية والفكاهة، ودقة الملاحظة وحيوية الوصف. يمزج الحكاية والنقاش والشعر والأمثال بعبارة سلسة قريبة من القارئ.','','',[.47,.5,.54,.57]],
+['كتاب الحيوان','Kitab al-Hayawan','موسوعة كبيرة تقع في سبعة أجزاء في الطبعات المعروفة، تتناول الحيوان وتجمع الملاحظة والأخبار والشعر والأمثال والجدل الفكري، وليست كتابًا علميًا خالصًا بالمعنى الحديث.','','اقترب من الكتاب العملاق لتُفتح صفحاته',[.58,.62,.7,.74]],
+['كتاب البخلاء','Al-Bukhala','مجموعة طريفة من الحكايات والنوادر عن البخلاء وطباعهم، تصوّر الحياة الاجتماعية بروح ساخرة وحوار حيّ، وتكشف عنايته بالإنسان العادي.','','',[.75,.78,.83,.87]],
+['أهم إسهاماته الأدبية والفكرية','Contributions','من أشهر كتبه أيضًا «البيان والتبيين» في البلاغة والخطابة، ورسائله ومنها «التربيع والتدوير». يُنسب إليه عدد كبير من المؤلفات ضاع كثير منها، وقد جعل النثر ميدانًا للفكر والنقد والفكاهة.','','انتهى معرض الجاحظ · التالي: أبو نواس',[.88,.92,.97,1]]]);
+const xs4=mkc([
+['من هو أبو نواس؟','Who was Abu Nuwas?','هو الحسن بن هانئ الحكمي، شاعر عباسي من أشهر شعراء العصر العباسي الأول، عُرف بكنيته أبي نواس وبالظرف والجرأة وتجديد الأغراض الشعرية.','','',[.01,.05,.1,.14],1],
+['حياته ونشأته','Life','وُلد نحو سنة 756م (139هـ تقريبًا) في إقليم الأهواز لأب عربي وأم فارسية، ونشأ في البصرة وأخذ عن خلف الأحمر ووالبة بن الحباب، ثم استقر في بغداد واتصل بالرشيد ثم الأمين. توفي في بغداد نحو سنة 198هـ (813–814م).','','تاريخا الميلاد والوفاة محل خلاف',[.15,.18,.23,.27]],
+['مكانته في الشعر العباسي','His standing','يُعدّ من أبرز شعراء التجديد في العصر العباسي، ومن رموز انتقال الشعر العربي إلى حياة المدينة ومجالس بغداد، وترك أثرًا واسعًا فيمن جاء بعده.','','',[.28,.31,.36,.4]],
+['خصائص أسلوبه الشعري','Style','يتميز بسلاسة اللغة وسهولة الألفاظ وخفة الروح والمفارقة، وبعبارة قريبة من الحياة اليومية. خرج على تقليد الوقوف على الأطلال في مطالع القصائد ودعا إلى تجديد الصورة والموضوع.','','',[.41,.44,.49,.53]],
+['أهم الأغراض الشعرية','Themes','اشتهر بالخمريات حتى عُدّ إمامها، وكتب في المديح والهجاء والغزل والطرديات (شعر الصيد)، ونُسبت إليه أبيات زهدية. ','','',[.54,.57,.63,.68]],
+['أشهر أعماله وإسهاماته','Works','وصل شعره في «الديوان» الذي جمعه ورواه علماء بعده، ومنهم حمزة الأصفهاني والصولي، وتتعدد رواياته. وتتصدره الخمريات، ولذلك ارتبط اسمه بهذا الباب. اضغط على البيت أدناه لتبديل المقتطف.','','المقتطفات من الديوان المنسوب إليه، وقد تختلف الرواية',[.69,.72,.78,.82]],
+['أثره في الأدب العربي','Legacy','ظل شعره مرجعًا في التجديد والظرف، وصار شخصية أدبية تدور حولها النوادر في المصادر القديمة، وأثّر في الشعر العباسي وما بعده. انتهى معرض أبي نواس.','','المحطة التالية: المقارنة والاختبار',[.83,.87,2,3]]]);
+const pmEl=document.createElement('button');pmEl.className='poem';xs4[5][0].querySelector('.card').appendChild(pmEl);const sv=()=>{pmEl.innerHTML=VS[pi][0]+'<br>'+VS[pi][1]+'<small>'+VS[pi][2]+'</small>'};sv();pmEl.onclick=()=>{pi^=1;vd();sv()};
+const upd=(l,s)=>l.forEach(([el,a,b,c,e])=>{const o=win(s,a,b,c,e);el.style.opacity=o;el.style.visibility=o>.01?'visible':'hidden';el.style.transform='translateY('+(1-o)*18+'px)'});
+
+// dust
+const DN=mobile?160:520,dp=new Float32Array(DN*3),ph=new Float32Array(DN);
+for(let i=0;i<DN;i++){dp[i*3]=(Math.random()-.5)*20;dp[i*3+1]=Math.random()*14;dp[i*3+2]=4-Math.random()*56;ph[i]=Math.random()*6.28}
+const dg=new T.BufferGeometry();dg.setAttribute('position',new T.BufferAttribute(dp,3));
+const dust=new T.Points(dg,new T.PointsMaterial({map:glowT,size:mobile?.42:.3,transparent:true,opacity:.55,depthWrite:false,blending:T.AdditiveBlending,color:0xffd9a0,fog:false}));dust.frustumCulled=false;scene.add(dust);
+
+// ---------- camera path (straight, stable, no shake) ----------
+let path;
+const build=z0=>{path=new T.CatmullRomCurve3([[0,5,z0],[0,5,z0-1],[0,5.2,z0-6],[0,5.4,-1],[0,5.8,-15],[0,6,-29],[0,5.6,-40]].map(a=>new T.Vector3(...a)))};
+let W=0,H=0;
+function size(force){const w=innerWidth,h=innerHeight;if(!force&&w===W&&Math.abs(h-H)<160)return;W=w;H=h;R.setSize(w,h,false);cam.aspect=w/h;const por=w/h<.9;cam.fov=por?62:50;cam.updateProjectionMatrix();build(por?18:15)}
+size(true);addEventListener('resize',()=>size(false));
+
+// ---------- scroll ----------
+gsap.registerPlugin(ScrollTrigger);ScrollTrigger.config({ignoreMobileResize:true});
+const S={p:0};
+gsap.to(S,{p:1,ease:'none',scrollTrigger:{trigger:'#track',start:'top top',end:'bottom bottom',scrub:.8}});
+const ez=x=>x<0?0:x>1?1:x*x*(3-2*x);
+const win=(p,a,b,c,e)=>p<a||p>e?0:p<b?ez((p-a)/(b-a)):p>c?1-ez((p-c)/(e-c)):1;
+const chs=[[$('#c0'),-1,-.5,.04,.13],[$('#c1'),.52,.6,.72,.8],[$('#c2'),.88,.95,2,3]];
+const fill=$('#prog .fill');
+document.querySelectorAll('#prog button').forEach(b=>b.addEventListener('click',()=>scrollTo({top:(document.documentElement.scrollHeight-innerHeight)*parseFloat(b.dataset.p),behavior:'smooth'})));
+
+const clock=new T.Clock();
+(function loop(){
+  requestAnimationFrame(loop);
+  const t=clock.getElapsedTime(),P=S.p,p=Math.min(P*7,1),s2=Math.min(Math.max((P-1/7)*3.5,0),1),s3=Math.min(Math.max((P-3/7)*3.5,0),1),s4=Math.min(Math.max((P-5/7)*3.5,0),1);
+  const q=s4>0?path4.getPoint(s4):s3>0?path3.getPoint(s3):s2>0?path2.getPoint(s2):path.getPoint(p);cam.position.copy(q);cam.lookAt(q.x,q.y-.5,q.z-14);dust.position.set(q.x,0,Math.min(0,q.z+40));
+  const op=ez((p-.04)/.36)*1.52;leaves[0].rotation.y=op;leaves[1].rotation.y=-op;
+  chs.forEach(([el,a,b,c,e])=>{const o=win(p,a,b,c,e)*(el.id=='c2'?1-ez(s2/.08):1);el.style.opacity=o;el.style.visibility=o>.01?'visible':'hidden';el.style.transform=`translateY(${(1-o)*18}px)`});
+  fill.style.transform=`scaleY(${pf(P)})`;
+  xs.forEach(([el,a,b,c,e])=>{const o=win(s2,a,b,c,e);el.style.opacity=o;el.style.visibility=o>.01?'visible':'hidden';el.style.transform=`translateY(${(1-o)*18}px)`});
+  const pz=ez((s2-.07)/.2);portal.forEach(m=>m.position.y=5.2+pz*7.5);
+  ex.forEach(g=>{const k=ez((24-(q.z-g.userData.z))/10);g.visible=k>.01;g.position.y=-(1-k)*3.2});
+  upd(xs3,s3);upd(xs4,s4);if(mobile)rl2[0].position.z=-108-42*ez(s4/.12);
+  g1.position.y=4.25+ez(s3/.2)*9;g2.position.y=3.75+ez((s3-.72)/.14)*9;
+  bks.forEach(b=>{const k=ez((24-Math.hypot(q.x-b.x,q.z-b.z))/10);b.pg.forEach(m=>{m.scale.x=Math.max(k,.001);m.position.x=m.userData.px*k});b.cf.scale.x=Math.max(1-k,.001)});
+  if(!rm){arms.forEach(a=>a.rotation.y=t*.3);fp.forEach(m=>{const u=m.userData;m.position.set(u.x,u.y+Math.sin(t*.6+u.ph)*.3,u.z);m.rotation.y=Math.sin(t*.3+u.ph)*.6;m.rotation.z=Math.sin(t*.4+u.ph)*.15})}
+  if(!rm){
+    for(let i=0;i<DN;i++){const k=i*3;dp[k]+=Math.sin(t*.2+ph[i])*.003;dp[k+1]+=.004+Math.sin(t*.5+ph[i])*.002;if(dp[k+1]>14)dp[k+1]=0}
+    dg.attributes.position.needsUpdate=true;
+    chand.forEach((l,i)=>{l.intensity=1.5+Math.sin(t*2.1+i*2)*.04+Math.sin(t*5.3+i)*.02});
+  }
+  R.render(scene,cam);
+})();
+})();
+</script>
+</body>
+</html>
